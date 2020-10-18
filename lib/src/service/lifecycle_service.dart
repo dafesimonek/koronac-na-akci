@@ -45,8 +45,8 @@ class LifecycleService extends WidgetsBindingObserver {
     log.info("Configuring initial state ...");
     await me._configureInitialState(mode);
 
-    log.info("Loading previous persistent state ...");
-    await getMy<PersistenceService>().loadPreviousState();
+    // log.info("Loading previous persistent state ...");
+    // await getMy<PersistenceService>().loadPreviousState();
 
     log.info("Configuring hooks ...");
     await me._configureHooks();

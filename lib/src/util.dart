@@ -13,19 +13,20 @@ StateHolder<STATE> getMyStateHolder<STATE>() =>
     GetIt.instance.get<StateHolder<STATE>>();
 
 extension FindContextState on BuildContext {
-  StateHolder<T> findStateHolder<T extends Built<T, Builder<T, dynamic>>>() {
+  StateHolder<T>
+      findStateHolder<T extends Built<dynamic, Builder<dynamic, dynamic>>>() {
     return this.read<StateHolder<T>>();
   }
 }
 
 extension ReadContextState on BuildContext {
-  T readState<T extends Built<T, Builder<T, dynamic>>>() {
+  T readState<T extends Built<dynamic, Builder<dynamic, dynamic>>>() {
     return this.read<StateHolder<T>>().state;
   }
 }
 
 extension WatchContextState on BuildContext {
-  T watchState<T extends Built<T, Builder<T, dynamic>>>() {
+  T watchState<T extends Built<dynamic, Builder<dynamic, dynamic>>>() {
     return this.watch<StateHolder<T>>().state;
   }
 }
