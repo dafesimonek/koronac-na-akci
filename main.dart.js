@@ -46617,7 +46617,7 @@ N.U7.prototype={
 $0:function(){return P.w(t.F7,t.kr)},
 $S:293}
 S.vc.prototype={
-K:function(a,b){return new S.pG(this.c,"/","Flutter Demo",X.a2m(null,C.jF,X.a2v()),null)}}
+K:function(a,b){return new S.pG(this.c,"/","Koron\xe1\u010d na akci",X.a2m(null,C.jF,X.a2v()),null)}}
 S.Hg.prototype={
 $1:function(a){return new E.ix(null)},
 $S:294}
