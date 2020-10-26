@@ -46648,7 +46648,7 @@ K:function(a0,a1){var s,r,q,p,o,n,m,l,k,j,i,h=null,g=T.iW(h,30,h),f=t.mm,e=t.fQ,
 a.toString
 s=$.l4()
 r=t.uW
-a=T.li(H.c([new T.fJ(C.kZ,d,h),R.Rd(C.pc,1000,b,c,2000,1,s.$1$0(r).gEv(),a),D.YS(h,new T.fJ(C.kY,L.mX("Po\u010dty naka\u017een\xfdch podle okres\u016f na Seznamu",A.dt(h,h,C.jF,h,C.n3,h,h,h,h,h,h,h,h,h,h,h,!0,h,h,h,h,h,h)),h),C.bv,!1,h,h,h,h,h,h,h,h,h,h,this.gMt(),h,h,h,h,h)],e),C.de,C.bL,C.bM)
+a=T.li(H.c([new T.fJ(C.kZ,d,h),R.Rd(C.pc,4000,b,c,4000,1,s.$1$0(r).gEv(),a),D.YS(h,new T.fJ(C.kY,L.mX("Po\u010dty naka\u017een\xfdch podle okres\u016f na Seznamu",A.dt(h,h,C.jF,h,C.n3,h,h,h,h,h,h,h,h,h,h,h,!0,h,h,h,h,h,h)),h),C.bv,!1,h,h,h,h,h,h,h,h,h,h,this.gMt(),h,h,h,h,h)],e),C.de,C.bL,C.bM)
 c=T.iW(h,30,h)
 q=M.hP(a1,f).r
 p=this.N5(q)
@@ -46672,7 +46672,7 @@ m=T.li(H.c([new T.fJ(C.kZ,T.zv(h,h,C.d7,!0,h,new Q.c5(h,H.c([new Q.c5("Odhad: ",
 j=M.hP(a1,f).d
 i=C.d.ae(j*100)
 f=K.bD(a1).V
-e=T.li(H.c([g,a,c,d,b,l,m,T.li(H.c([new T.fJ(C.kZ,T.zv(h,h,C.d7,!0,h,new Q.c5(h,H.c([new Q.c5("Odhad: ",h,A.dt(h,h,C.pb,h,h,h,h,h,h,h,h,h,C.oq,h,h,h,!0,h,h,h,h,h,h)),new Q.c5("O sv\xe9 infekci nev\xed ",h,h),new Q.c5(""+i+"% lid\xed",h,A.dt(h,h,h,h,h,h,h,h,h,h,h,h,h,C.az,h,h,!0,h,h,h,h,h,h))],n),f.z),C.aw,h,h,1,C.aR),h),R.Rd(h,100,h,""+i+"%",1,0.01,s.$1$0(r).gEm(),j)],e),C.de,C.bL,C.bM)],e),C.io,C.bL,C.bM)
+e=T.li(H.c([g,a,c,d,b,l,m,T.li(H.c([new T.fJ(C.kZ,T.zv(h,h,C.d7,!0,h,new Q.c5(h,H.c([new Q.c5("Odhad: ",h,A.dt(h,h,C.pb,h,h,h,h,h,h,h,h,h,C.oq,h,h,h,!0,h,h,h,h,h,h)),new Q.c5("O sv\xe9 infekci nev\xed (nebo ignoruje) ",h,h),new Q.c5(""+i+"% lid\xed",h,A.dt(h,h,h,h,h,h,h,h,h,h,h,h,h,C.az,h,h,!0,h,h,h,h,h,h))],n),f.z),C.aw,h,h,1,C.aR),h),R.Rd(h,100,h,""+i+"%",1,0.01,s.$1$0(r).gEm(),j)],e),C.de,C.bL,C.bM)],e),C.io,C.bL,C.bM)
 return new M.qE(new E.zU(!0,e,h),h)},
 kT:function(){var s=0,r=P.ab(t.z)
 var $async$kT=P.a4(function(a,b){if(a===1)return P.a8(b,r)
@@ -46739,7 +46739,7 @@ En:function(a){var s=$.l4(),r=t.mf,q=s.$1$0(r)
 q.a=s.$1$0(r).a.pc(new V.LK(this,a))
 q.aO()}}
 V.LI.prototype={
-$1:function(a){a.gby().b=1000
+$1:function(a){a.gby().b=1500
 a.gby().d=10
 a.gby().c=10
 a.gby().e=0.5
