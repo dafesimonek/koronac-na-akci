@@ -11,8 +11,8 @@ class KoronacService {
   KoronacState prepareDefaultState(AppMode mode) {
     return KoronacState((KoronacStateBuilder b) {
       b
-        ..testedInfected = 1000
-        ..realToTestedRatio = 10
+        ..testedInfected = 500
+        ..realToTestedRatio = 4
         ..groupSize = 10
         ..notIsolatedRatio = 0.5;
       _updateEstimates(b);

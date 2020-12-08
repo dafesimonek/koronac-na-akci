@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
 import 'package:flutter/widgets.dart';
 import 'package:koronac_na_akci/src/service/koronac_service.dart';
 import 'package:koronac_na_akci/src/state/koronac_state.dart';
@@ -52,34 +53,36 @@ class KoronacScreen extends StatelessWidget {
         ),
         Slider(
           min: 1.0,
-          max: 2000.0,
-          divisions: 1000,
+          max: 4000.0,
+          divisions: 4000,
           label: '${context.watchState<KoronacState>().testedInfected}',
           activeColor: Colors.orange,
           inactiveColor: Colors.orange.withOpacity(0.3),
           value: context.watchState<KoronacState>().testedInfected.toDouble(),
           onChanged: getMy<KoronacService>().setTestedInfected,
         ),
-        GestureDetector(
-          child: Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 24.0),
-            child: Text(
-              'Počty nakažených podle okresů na Seznamu',
-              style: TextStyle(
-                color: Colors.blue,
-                decoration: TextDecoration.underline,
+        MouseRegion(
+          cursor: SystemMouseCursors.click,
+          child: GestureDetector(
+            child: Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 24.0),
+              child: Text(
+                'Počty nakažených v obcích podle covidvobcich.cz',
+                style: TextStyle(
+                  color: Colors.blue,
+                  decoration: TextDecoration.underline,
+                ),
               ),
             ),
+            onTap: _openInfectedDataOnCovidVObcich,
           ),
-          onTap: _openInfectedDataOnSeznam,
         ),
       ],
     );
   }
 
-  _openInfectedDataOnSeznam() async {
-    const url =
-        'https://www.seznamzpravy.cz/clanek/pdrobna-mapa-kde-je-v-ceske-republice-koronavirus-93746';
+  _openInfectedDataOnCovidVObcich() async {
+    const url = 'https://covidvobcich.cz/';
     if (await canLaunch(url)) {
       await launch(url);
     } else {
@@ -218,7 +221,7 @@ class KoronacScreen extends StatelessWidget {
                     style: TextStyle(
                         fontStyle: FontStyle.italic, color: Colors.grey)),
                 TextSpan(
-                  text: 'O své infekci neví ',
+                  text: 'O své infekci neví (nebo ignoruje) ',
                 ),
                 TextSpan(
                   text: '$notIsolatedPercent% lidí',
